@@ -1,0 +1,17 @@
+{
+  "name": "upload",
+  "repo": "shallker/upload",
+  "description": "Ajax upload component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "shallker/http": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/upload.js"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "project",
+  "description": "About",
+  "version": "1.0.0",
+  "author": "Shallker Wang <shallker.wang@profero.com>",
+  "main": "index.js",
+  "keywords": [
+    "project"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shallker-wang/project.git"  
+  },
+  "bugs": {
+    "url": "https://github.com/shallker-wang/project/issues"
+  },
+  "dependencies": {
+    "dever": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "coffee-script": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "MIT"
+}

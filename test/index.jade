@@ -1,0 +1,29 @@
+extends layout/default
+block styles
+
+append content
+  form
+    input(type="file", id="input", multiple)
+
+
+append scripts
+  script
+    var input = document.getElementById('input');
+    var Upload = require('upload');
+
+    input.addEventListener('change', function (change) {
+      var file = this.files[0];
+      var upload = new Upload;
+      var payload = new FormData;
+
+      payload.append('photo', file);
+      upload.file(payload).to('http://127.0.0.1:4000/upload');
+
+      upload.on('progress', function (progress) {
+        console.log('progress', progress)
+      });
+
+      upload.on('complete', function (a) {
+        console.log('complete');
+      });
+    });
